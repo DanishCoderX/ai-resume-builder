@@ -29,9 +29,9 @@ export default function ResumePreview() {
   const [atsResult, setAtsResult] = useState(null);
 
   const handlePrint = useReactToPrint({
-    content: () => printRef.current,
-    documentTitle: `${resume.personalInfo.name || 'Resume'}_Resume`,
-  });
+  contentRef: printRef,
+  documentTitle: `${resume.personalInfo.name || 'Resume'}_Resume`,
+});
 
   const handleATSScore = async () => {
     setScoring(true);
