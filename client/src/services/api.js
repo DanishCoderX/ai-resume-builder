@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'ai-resume-builder-production-1c7d.up.railway.app',
+  baseURL: 'http://localhost:5001/api',,
 });
 
 export default api;
